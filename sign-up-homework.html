@@ -33,36 +33,39 @@
 			</ul>
 		</nav>
 		<div id="mainContent">
-            <h3>If you want to connect with the community and post content, please create an account.</h3>
-			<!-- A Simple Form    -->
-		
-            <form action="">
-              <label for="userid">User name:</label>
-              <input type="text" name="userid"><br>
-              
-              <label for="psw">User password:</label>
-              <input type="password" name="psw"><br>
-              
-              <label for="streetnumber">Street number:</label>
-              <input type="number" name="streetnumber" min="1" max="99999"><br>
-              
-              <label for="street">Street address:</label>
-              <input type="text" name="street"><br>
-              
-              <label for="city">City:</label>
-              <input type="text" name="city"><br>
-              
-              <label for="state">State:</label>
-              <input type="text" name="state"><br>
-              
-              <label for="zip">Zip:</label>
-              <input type="text" name="zip" pattern="[0-9]{5}"><br>
-              
-              <label for="countrycode">Country code:</label>
-              <input type="text" name="countrycode" pattern="[A-Za-z]{3}" title="Three letter country code"><br><br>
+            <h3>If you want to connect with the community and post content, please create an account.</h3><br><br>
 
-              <input type="submit" value="Submit">
-            </form>
+			<!-- A Simple Form    -->
+		   <ul>
+              <form action="">
+
+                <label for="userid">User name:</label>
+                <input type="text" name="userid" required><br>
+
+                <label for="psw">User password:</label>
+                <input type="password" name="psw" required><br>
+
+                <label for="streetnumber">Street number:</label>
+                <input type="number" name="streetnumber" min="1" max="99999" required><br>
+
+                <label for="street">Street address:</label>
+                <input type="text" name="street" required><br>
+
+                <label for="city">City:</label>
+                <input type="text" name="city" required><br>
+
+                <label for="state">State:</label>
+                <input type="text" name="state" required><br>
+
+                <label for="zip">Zip:</label>
+                <input type="text" name="zip" pattern="[0-9]{5}" required><br>
+
+                <label for="countrycode">Country code:</label>
+                <input type="text" name="countrycode" pattern="[A-Za-z]{3}" title="Three letter country code" required><br><br>
+
+                <input type="submit" value="Submit">
+              </form>
+             </ul>
             	
 
         </div><!-- closing maincContent div tag -->
