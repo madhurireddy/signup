@@ -33,48 +33,63 @@
 			</ul>
 		</nav>
 		<div id="mainContent">
-            <h3>If you want to connect with the community and post content, please create an account.</h3><br><br>
+          <h3>If you want to connect with the community and post content, please create an account.</h3><br><br>
 
-			<!-- A Simple Form    -->
-		   <ul>
-              <form action="">
+          <!-- A Simple Form    -->
 
+          <form action="someaction.jsp">
+            <ul>
+              <li>
                 <label for="userid">User name:</label>
-                <input type="text" name="userid" required><br>
+                <input type="text" name="userid" id="userid" required>
+              </li>
 
+              <li>
                 <label for="psw">User password:</label>
-                <input type="password" name="psw" required><br>
+                <input type="password" name="psw" id="psw" required>
+              </li>
 
+              <li>
                 <label for="streetnumber">Street number:</label>
-                <input type="number" name="streetnumber" min="1" max="99999" required><br>
+                <input type="number" name="streetnumber" id="streetnumber" min="1" max="99999" required>
+              </li>
 
+              <li>
                 <label for="street">Street address:</label>
-                <input type="text" name="street" required><br>
+                <input type="text" name="street" id="street" required>
+              </li>
 
+              <li>
                 <label for="city">City:</label>
-                <input type="text" name="city" required><br>
+                <input type="text" name="city" id="city" required>
+              </li>
 
+              <li>
                 <label for="state">State:</label>
-                <input type="text" name="state" required><br>
+                <input type="text" name="state" id="state" required>
+              </li>
 
+              <li>
                 <label for="zip">Zip:</label>
-                <input type="text" name="zip" pattern="[0-9]{5}" required><br>
+                <input type="text" name="zip" id="zip" pattern="[0-9]{5}" title="5 digit zip" required>
+              </li>
 
+              <li>
                 <label for="countrycode">Country code:</label>
-                <input type="text" name="countrycode" pattern="[A-Za-z]{3}" title="Three letter country code" required><br><br>
+                <input type="text" name="countrycode" id="countrycode" pattern="[A-Za-z]{3}" title="Three letter country code" required></li>
 
+              <li>
                 <input type="submit" value="Submit">
-              </form>
-             </ul>
-            	
-
+              </li>
+            </ul>
+          </form>
+          
         </div><!-- closing maincContent div tag -->
 		
 		
         <!--  This is the footer section, only footer stuff -->
 		<footer>
 			<p>&copy; copyright 2015</p>
-			
 		</footer>
 
 	</body>
